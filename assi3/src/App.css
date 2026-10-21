@@ -1,0 +1,755 @@
+/* =========================
+   MAIN APP
+========================= */
+
+.App {
+  min-height: 100vh;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  background: #172554 !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.18) !important;
+}
+
+.navbar-title {
+  font-weight: 700 !important;
+  letter-spacing: 1px;
+}
+
+.navbar-button {
+  margin-left: 6px !important;
+  font-weight: 500 !important;
+  border-radius: 8px !important;
+}
+
+.navbar-button:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero-section {
+  min-height: 520px;
+
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 80px 20px;
+
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #172554,
+    #2563eb
+  );
+}
+
+.hero-name {
+  font-size: 58px !important;
+  font-weight: 800 !important;
+  margin-bottom: 15px !important;
+}
+
+.hero-role {
+  color: #dbeafe !important;
+  font-weight: 500 !important;
+  margin-bottom: 25px !important;
+}
+
+.hero-description {
+  max-width: 650px;
+
+  margin: 0 auto 30px auto !important;
+
+  color: #e0e7ff;
+
+  font-size: 17px !important;
+
+  line-height: 1.8 !important;
+}
+.hero-button {
+  padding: 12px 30px !important;
+  border-radius: 25px !important;
+  font-weight: bold !important;
+  background-color: white !important;
+  color: #172554 !important;
+}
+
+.hero-button:hover {
+  background-color: #dbeafe !important;
+}
+
+
+/* =========================
+   COMMON SECTION
+========================= */
+
+.resume-section {
+  padding: 75px 20px;
+}
+
+.section-title {
+  text-align: center;
+
+  font-weight: 700 !important;
+
+  color: #172554;
+
+  margin-bottom: 45px !important;
+}
+
+.section-title::after {
+  content: "";
+
+  display: block;
+
+  width: 60px;
+  height: 4px;
+
+  background: #2563eb;
+
+  margin: 12px auto 0;
+
+  border-radius: 10px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-section {
+  padding: 75px 20px;
+
+  background-color: white;
+}
+
+.about-text {
+  max-width: 750px;
+
+  margin: auto !important;
+
+  text-align: center;
+
+  color: #555;
+
+  font-size: 17px !important;
+
+  line-height: 1.9 !important;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+.education-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.education-card {
+  width: 100%;
+  padding: 10px;
+
+  border-radius: 15px !important;
+
+  border-left: 5px solid #2563eb;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08) !important;
+
+  transition: all 0.3s ease !important;
+}
+
+.education-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.13) !important;
+}
+
+.education-degree {
+  color: #172554;
+  font-weight: 700 !important;
+}
+
+.education-college {
+  color: #555;
+  margin-top: 10px !important;
+}
+
+.education-year {
+  margin-top: 15px !important;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-container {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 10px;
+}
+
+
+/* Skill Chip */
+
+.skill-chip {
+  font-size: 15px !important;
+
+  padding: 8px !important;
+
+  border-radius: 20px !important;
+
+  background-color: #dbeafe !important;
+
+  color: #1e40af !important;
+
+  border: 1px solid #93c5fd !important;
+
+  transition: all 0.25s ease !important;
+}
+
+
+/* Hover */
+
+.skill-chip:hover {
+  background-color: #2563eb !important;
+
+  color: white !important;
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 5px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* ========================
+langauges 
+==========================*/
+.languages-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.language-chip {
+  font-size: 15px !important;
+  padding: 8px !important;
+  border-radius: 20px !important;
+  background-color: #dbeafe !important;
+  color: #1e40af !important;
+  border: 1px solid #93c5fd !important;
+  transition: all 0.25s ease !important;
+}
+
+.language-chip:hover {
+  background-color: #2563eb !important;
+  color: white !important;
+  transform: translateY(-4px);
+  box-shadow: 0 5px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-container {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 30px;
+
+  max-width: 1000px;
+
+  margin: auto;
+}
+
+.project-card {
+  height: 100%;
+
+  border-radius: 15px !important;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08) !important;
+
+  transition: all 0.3s ease !important;
+
+  border-top: 4px solid #2563eb;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.project-title {
+  color: #172554;
+
+  font-weight: 700 !important;
+}
+
+.project-description {
+  color: #666;
+
+  line-height: 1.7 !important;
+
+  margin-bottom: 20px !important;
+}
+
+.project-chip {
+  background-color: #eef2ff !important;
+
+  color: #3730a3 !important;
+
+  border: 1px solid #c7d2fe !important;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+  background-color: white;
+}
+
+.contact-container {
+  max-width: 650px;
+
+  margin: auto;
+}
+
+.contact-info {
+  text-align: center;
+
+  color: #555;
+
+  margin-bottom: 12px !important;
+}
+
+.contact-info a {
+  color: #2563eb;
+
+  font-weight: 500;
+}
+
+.contact-button {
+  padding: 12px !important;
+
+  border-radius: 8px !important;
+
+  font-weight: bold !important;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+.App {
+  background-color: #f6f8fc;
+  color: #222;
+
+  min-height: 100vh;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* =========================
+   MAIN DARK BACKGROUND
+========================= */
+
+.App.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+
+/* =========================
+   ALL SECTIONS
+========================= */
+
+.App.dark-mode .resume-section {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.App.dark-mode .about-section {
+  background-color: #1a1a1a !important;
+}
+
+.App.dark-mode .about-text {
+  color: #dddddd !important;
+}
+
+
+/* =========================
+   SECTION TITLES
+========================= */
+
+.App.dark-mode .section-title {
+  color: #ffffff !important;
+}
+
+
+/* =========================
+   EDUCATION CARDS
+========================= */
+
+.App.dark-mode .education-card {
+  background-color: #1e1e1e !important;
+
+  color: #ffffff !important;
+
+  border-left-color: #60a5fa !important;
+}
+
+.App.dark-mode .education-card .MuiCardContent-root {
+  color: #ffffff !important;
+}
+
+.App.dark-mode .education-degree {
+  color: #ffffff !important;
+}
+
+.App.dark-mode .education-college {
+  color: #cccccc !important;
+}
+
+.App.dark-mode .education-year {
+  background-color: #2563eb !important;
+
+  color: #ffffff !important;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.App.dark-mode .skills-container {
+  color: white;
+}
+
+.App.dark-mode .skill-chip {
+  background-color: #1e3a8a !important;
+
+  color: #ffffff !important;
+
+  border-color: #60a5fa !important;
+}
+
+
+/* =========================
+   PROJECT CARDS
+========================= */
+
+.App.dark-mode .project-card {
+  background-color: #1e1e1e !important;
+
+  color: #ffffff !important;
+
+  border-top-color: #60a5fa !important;
+}
+
+.App.dark-mode .project-card .MuiCardContent-root {
+  color: #ffffff !important;
+}
+
+.App.dark-mode .project-title {
+  color: #ffffff !important;
+}
+
+.App.dark-mode .project-description {
+  color: #cccccc !important;
+}
+
+.App.dark-mode .project-chip {
+  background-color: #312e81 !important;
+
+  color: #ffffff !important;
+
+  border-color: #6366f1 !important;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.App.dark-mode .contact-section {
+  background-color: #1a1a1a !important;
+
+  color: #ffffff !important;
+}
+
+.App.dark-mode .contact-info {
+  color: #dddddd !important;
+}
+
+
+/* Contact TextFields */
+
+.App.dark-mode .MuiTextField-root .MuiInputLabel-root {
+  color: #bbbbbb !important;
+}
+
+.App.dark-mode .MuiTextField-root .MuiInputBase-input {
+  color: #ffffff !important;
+}
+
+.App.dark-mode .MuiTextField-root .MuiOutlinedInput-root fieldset {
+  border-color: #777777 !important;
+}
+
+.App.dark-mode .MuiTextField-root .MuiOutlinedInput-root:hover fieldset {
+  border-color: #ffffff !important;
+}
+
+.App.dark-mode .MuiTextField-root .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #60a5fa !important;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.App.dark-mode .footer {
+  background-color: #080808 !important;
+
+  color: #ffffff !important;
+}
+
+.App.dark-mode .footer-text {
+  color: #cccccc !important;
+}
+
+
+/* =========================
+   MUI COMPONENTS
+========================= */
+
+.App.dark-mode .mui-card {
+  background-color: #1e1e1e !important;
+
+  color: #ffffff !important;
+}
+
+.App.dark-mode .mui-card-title {
+  color: #ffffff !important;
+}
+
+
+/* Toggle Buttons */
+
+.App.dark-mode .MuiToggleButton-root {
+  color: #ffffff;
+
+  border-color: #666666;
+}
+
+.App.dark-mode .MuiToggleButton-root.Mui-selected {
+  background-color: #2563eb;
+
+  color: #ffffff;
+}
+
+
+/* =========================
+   MUI CHECKBOX
+========================= */
+
+.App.dark-mode .MuiCheckbox-root {
+  color: #90caf9;
+}
+
+
+/* =========================
+   MUI SLIDER
+========================= */
+
+.App.dark-mode .MuiSlider-root {
+  color: #60a5fa;
+}
+
+
+/* =========================
+   MUI SWITCH
+========================= */
+
+.App.dark-mode .MuiSwitch-track {
+  background-color: #777777 !important;
+}
+
+.App.dark-mode .MuiSwitch-thumb {
+  background-color: #ffffff !important;
+}
+
+
+/* =========================
+   MUI PROGRESS
+========================= */
+
+.App.dark-mode .MuiLinearProgress-root {
+  background-color: #444444;
+}
+
+.App.dark-mode .MuiLinearProgress-bar {
+  background-color: #60a5fa;
+}
+
+
+/* =========================
+   MUI TYPOGRAPHY
+========================= */
+
+.App.dark-mode .MuiTypography-root {
+  color: inherit;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+.App.dark-mode a {
+  color: #60a5fa;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  text-align: center;
+
+  padding: 30px;
+
+  background-color: #172554;
+
+  color: white;
+}
+
+.footer-text {
+  color: #cbd5e1;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .hero-name {
+    font-size: 42px !important;
+  }
+
+  .hero-role {
+    font-size: 21px !important;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar-button {
+    font-size: 12px !important;
+
+    margin-left: 1px !important;
+  }
+
+  .resume-section {
+    padding: 55px 15px;
+  }
+}
+
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+  .hero-name {
+    font-size: 34px !important;
+  }
+
+  .hero-description {
+    font-size: 15px !important;
+  }
+
+  .section-title {
+    font-size: 28px !important;
+  }
+
+  .navbar-title {
+    font-size: 16px !important;
+  }
+
+}
+@media (max-width: 768px) {
+  .education-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .skills-container {
+    padding: 0 10px;
+  }
+
+  .skill-chip {
+    font-size: 14px !important;
+  }
+
+}
