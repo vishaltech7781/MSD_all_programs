@@ -1,0 +1,12 @@
+.box {
+    height: 250px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chakra {
+    width: 240px;
+    height: 240px;
+}

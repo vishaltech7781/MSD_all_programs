@@ -1,0 +1,13 @@
+.header {
+    background-color: #FF671F;
+    color: white;
+    align-items:center;
+    height: 220px;
+    display:flex;
+    justify-content:center;
+    font-weight: bold;
+}
+.vande{
+    font-size: 70px !important;
+    font-weight: bold !important;
+}
