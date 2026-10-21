@@ -1,0 +1,2 @@
+Hello, this is Node.js Streams.
+This file is being read using a readable stream.
