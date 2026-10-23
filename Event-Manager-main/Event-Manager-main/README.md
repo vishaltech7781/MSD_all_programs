@@ -1,3 +1,5 @@
 # Event-Manager
 
-#live demo link:https://event-manager-weld.vercel.app/
+
+[🌐 Live Demo Preview](https://event-manager-weld.vercel.app/)
+
